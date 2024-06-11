@@ -1,26 +1,22 @@
 # CrewAI-ICP
 
-Your AI-powered sales assistant. Seamlessly preps for calls, analyzes transcripts for improvements, and syncs with your CRM
+## Inspiration
+Our journey began with a simple yet profound goal: to revolutionize the grading system by eliminating bias and significantly easing the workload of educators. The idea struck us when we noticed the inconsistency and subjectivity in traditional grading methods. We aimed to create a solution that not only streamlines the grading process but also ensures fairness and objectivity in evaluating students' performances.
 
-Project Description
+## What it does
+Our application leverages AI to automatically grade tests. Teachers upload a PDF of the test, and our system generates a detailed rubric with specific criteria and point values for each question. Teachers are able to edit this rubric as they wish. Then, teachers can upload an image of a student's answers, and evauluAI grades each answer based on the predefined rubric, ensuring a consistent and unbiased grading process. This approach not only speeds up the grading process but also provides students with clear, constructive feedback based on objective criteria.
 
-CrewAI-ICP stands as an autonomous, AI-driven ally crafted to transform the sales landscape, especially tailored for the high-paced world of private jet service sales. Acting discreetly in the background, it empowers sales managers to seal deals with unprecedented speed and efficiency.
+## How we built it
+We built our application using React, Node.js, JavaScript, Firebase, Vercel/Next.js, and the OpenAI API. We deployed it on Vercel and we also deployed it separately using Motoko on the ICP platform. The frontend, developed with React, offers a user-friendly interface for uploading tests and viewing grades. On the backend, our serverless functions handle the processing of uploaded PDFs and images, converting them into a format that our AI can analyze. By integrating the OpenAI API, we leverage cutting-edge language models to interpret the test content and student answers, generating accurate and fair grades based on the criteria outlined in the rubric.
 
-Core Functionalities:
+## Challenges we ran into
+Deploying on the Internet Computer Protocol (ICP) platform presented unique challenges that significantly tested our adaptability and ability to learn quickly. We eventually were able to figure it out through a lot of trial and error.
 
-Tailored Pre-Call Briefs: Leveraging the wealth of data available on LinkedIn, CrewAI-ICP meticulously compiles detailed memos for sales managers before each call. These briefs distill key insights about potential leads, encompassing professional background, recent activities, and potential points of interest, ensuring sales managers are fully prepared for every interaction.
+## Accomplishments that we're proud of
+We are incredibly proud of creating a tool that not only achieves our goal of unbiased grading but also significantly reduces the time teachers spend grading. The system allows teachers to efficiently grade and return tests to students. Our system's ability to handle a diverse array of subjects and question types with the same level of precision is an accomplishment that speaks to the versatility and robustness of our solution.
 
-Call Analysis & Performance Incentives: Post-call, CrewAI-ICP delves into the call transcripts, employing advanced analytics to assess the conversation's dynamics. It provides constructive feedback alongside actionable insights, aimed at refining sales tactics. Exceptional performance is recognized and rewarded, fostering a culture of excellence and motivation among sales teams.
+What we learned
+This project was a deep dive into the capabilities of AI in education. We learned about the intricacies of natural language processing, image recognition, and the importance of user experience design. It was enlightening to explore the ethical considerations of AI in grading and the impact of technology on educational equity. We also gained valuable experience in teamwork and project management, navigating challenges and celebrating milestones together.
 
-Seamless CRM Synchronization: Understanding the critical role of up-to-date customer data, CrewAI-ICP seamlessly integrates with CRM systems, automating updates and entries. This not only ensures the CRM remains current but also liberates sales managers from routine data entry tasks, allowing them to focus more on strategic sales initiatives.
-
-Advanced Capabilities: Beyond these core features, CrewAI-ICP harnesses programmable wallets, enabling it to autonomously manage its finances. This financial autonomy extends to engaging and compensating other AI agents for their services, creating a synergistic ecosystem of AI-driven support that further enhances the sales process
-
-How it's Made
-Core AI Implementation: LlamaIndex and OpenAI's GPT-4-Turbo Model: The heart of CrewAI-ICP's intelligence comes from the integration of LlamaIndex for data indexing and retrieval, combined with the linguistic prowess of OpenAI's GPT-4-Turbo model. LlamaIndex is utilized to efficiently index and search through vast amounts of data, including LinkedIn profiles and sales call transcripts. The GPT-4-Turbo model then processes this data, generating insightful pre-call briefs, in-depth call analyses, and actionable feedback. This combination ensures CrewAI-ICP can understand complex sales scenarios and provide nuanced, valuable insights to sales managers.
-
-Financial Autonomy: Circle Programmable Wallets: To achieve financial autonomy, CrewAI-ICP leverages Circle's programmable wallets, enabling it to manage its own finances. This setup allows CrewAI-ICP to autonomously handle transactional operations, such as compensating other AI agents for their services. The use of programmable wallets ensures seamless financial transactions within the AI ecosystem CrewAI-ICP operates in, enhancing operational efficiency.
-
-Smart Contract Integration: Smart Contracts for Escrow and Rewards: The escrow process and reward system are governed by smart contracts deployed on the Ethereum blockchain. These contracts manage the escrow of funds for sales deals and disburse rewards to sales managers based on performance metrics analyzed by CrewAI-ICP. This not only automates the reward process but also adds a layer of transparency and trust, as the terms are encoded in immutable smart contracts.
-
-Communication and Reporting: Telegram Bot API: For real-time interaction with sales managers, CrewAI-ICP employs the Telegram Bot API, enabling direct communication through a familiar and accessible platform. Sales managers receive personalized briefs, updates, and reports directly within Telegram, facilitating instant access to critical information and insights. This approach ensures that sales managers are always in the loop, with immediate access to the intelligence and support provided by CrewAI-ICP.
+What's next for CrewAI
+Looking ahead, we are excited to expand our application's capabilities. We plan to introduce more personalized feedback options, adapt our system to support additional test formats, and enhance our AI to handle even more complex grading scenarios. Our vision is to make unbiased, AI-powered grading accessible to educators worldwide, transforming the educational landscape by enabling more focused, effective teaching and learning experiences.
